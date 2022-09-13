@@ -96,6 +96,21 @@
 .contacts .link {
     color: var(--second-text-color);
 }
+.letter-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--second-text-color);
+}
+.phone-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    
+}
+.letter-icon:hover {
+    fill: var(--accent-color);
+}
 
 .site-nav .link.current {
     color: var(--accent-color);
@@ -183,18 +198,7 @@ ul {
 .items {
     display: flex;
 }
-.descrip::before {
-    display: block;
-    content: '';
-    height: 120px;
-    
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    background-image: url('../images/antenna\ 1.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
+
 .descrip {
     
     width: 270px;
@@ -227,6 +231,7 @@ ul {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+
 }
 
 .work {
@@ -283,6 +288,13 @@ ul {
 .list {
     list-style: none;
 }
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-list {
+    display: flex;
+}
 /* footer */
 .footer {
     padding-top: 60px;
@@ -321,6 +333,25 @@ ul {
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
+}
+.foot-cont {
+    display: flex;
+}
+.footer-text {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    
+    text-transform: uppercase;
+    
+    color: var(--primary-white-color);
+}
+.social-media {
+    margin-left: 70px;
+}
+.sm-list {
+  display: flex;
 }
 
 .item {
