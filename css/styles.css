@@ -54,9 +54,11 @@
 
 .site-nav .link,
 .contacts .link {
-    display: block;
+    display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
+    align-items: center;
+    justify-content: center;
 
     color: var(--primary-text-color);
 
@@ -65,6 +67,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .site-nav .logo {
     
     margin-right: 93px;
@@ -99,22 +102,10 @@
 .contacts .link {
     color: var(--second-text-color);
 }
-.letter-icon {
-  
-    
-    width: 16px;
-    height: 12px;
+
+.icon {
     margin-right: 10px;
     fill: var(--second-text-color);
-}
-.phone-icon {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    
-}
-.letter-icon:hover {
-    fill: var(--accent-color);
 }
 
 .site-nav .link.current {
@@ -123,6 +114,11 @@
 
 .link {
     text-decoration: none;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 ul, p, h1, h2, h3 {
@@ -338,27 +334,29 @@ ul {
     display: flex;
 }
 .client-item {
-   
-    
-
     padding: 16px 32px;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
+
 .client-item + .client-item {
     margin-left: 30px;
 }
+
 .client-link {
     display: flex;
     width: 106px;
     height: 60px;
     align-items: center;
     justify-content: center;
+    fill: #AFB1B8;
 
- 
-    
+}
+.client-link:hover,
+.client-link:focus {
+    fill: var(--accent-color);
 }
 /* footer */
 .footer {
@@ -454,6 +452,7 @@ ul {
 .link:focus {
     color: var(--accent-color);
 }
+
 /* portfolio */
 .button-list {
     display: flex;
