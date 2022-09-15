@@ -68,6 +68,7 @@
     letter-spacing: 0.02em;
 }
 
+
 .site-nav .logo {
     
     margin-right: 93px;
@@ -98,15 +99,19 @@
     display: flex;
     margin-left: auto;
 }
-
+.icon {
+   margin-right: 10px;
+   fill: var(--second-text-color);
+}
 .contacts .link {
     color: var(--second-text-color);
 }
 
-.icon {
-    margin-right: 10px;
-    fill: var(--second-text-color);
+.contacts .link:hover {
+    fill: var(--accent-color);
 }
+
+
 
 .site-nav .link.current {
     color: var(--accent-color);
@@ -115,11 +120,7 @@
 .link {
     text-decoration: none;
 }
-.contacts .link:hover,
-.contacts .link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
+
 
 ul, p, h1, h2, h3 {
     margin-top: 0;
@@ -451,6 +452,7 @@ ul {
 .link:hover,
 .link:focus {
     color: var(--accent-color);
+    
 }
 
 /* portfolio */
