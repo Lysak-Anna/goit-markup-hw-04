@@ -101,15 +101,13 @@
 }
 .icon {
    margin-right: 10px;
-   fill: var(--second-text-color);
+   fill: currentColor;
 }
 .contacts .link {
     color: var(--second-text-color);
 }
 
-.contacts .link:hover {
-    fill: var(--accent-color);
-}
+
 
 
 
